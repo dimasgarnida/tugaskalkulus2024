@@ -1,0 +1,54 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #777
+}
+
+/* Member Card Styles */
+.member-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+}
+
+.member-image img {
+    width: 100%;
+    height: auto;
+}
+
+.member-info {
+    padding: 20px;
+}
+
+.member-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.member-role {
+    font-size: 18px;
+    font-weight: 300;
+    color: #777;
+    margin: 5px 0 15px;
+}
+
+.member-bio {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}

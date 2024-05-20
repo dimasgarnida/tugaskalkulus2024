@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jumlah Deret ar^n</title>
+
+    <!-- link icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="shortcut icon" type="img/png" href="img/Stofun.png" />
+    
+    <!-- link fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+ <!-- cascading style sheets -->
+    <link rel="stylesheet" href="./css/menghitung.css" />
+  </head>
+
+  <body>
+    <!-- Navigasi bar start -->
+    <nav class="navbar">
+      <a href="./Index.html#home" class="navbar-logo">Expo<span>Series</span></a>
+      <div class="navbar-nav">
+        <a href="./Index.html">Home</a>
+        <a href="./tujuanWebsite.html">Tujuan Pembuatan Website</a>
+        <a href="./MenuPilihan.html">Menghitung</a>
+        <a href="./Anggota.html">Anggota</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navigasi bar end -->
+
+    <!-- section inputan start -->
+    <div class="container">
+      <h1>Deret Exsponensial</h1>
+      <p>Menggunakan Rumus Deret : <span style="color: white;">ar^n</span></p>
+      
+      <!-- Form Inputan Start -->
+      <div class="input-value">
+        <div class="input-form">
+          <label for="">Nilai suku pertama(a):</label>
+          <input class="input-a" type="number" placeholder="Inputkan a" />
+        </div>
+        <div class="input-form">
+          <label for="">Nilai rasio(r):</label>
+          <input class="input-r" type="number" placeholder="Inputkan r" />
+        </div>
+        <div class="input-form">
+          <label for="">Nilai indeks suku(n):</label>
+          <input class="input-n" type="number" placeholder="Inputkan n" />
+        </div>
+      </div>
+      <div class="btn">
+        <button type="button" class="calculate">Hitung</button>
+        <button type="reset" class="erase">Hapus</button>
+        <button><a style="color: #006DA4;" href="./MenuPilihan.html">Kembali</a></button>
+      </div>
+      <div class="calculate-result">
+        <div class="deret"></div>
+        <div class="result"></div>
+        <!-- form inputan End -->
+      </div>
+      <!-- section inputan end -->
+      
+    <!-- javascript -->
+    <script src="./js/menghitung.js"></script>
+
+    <!-- icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

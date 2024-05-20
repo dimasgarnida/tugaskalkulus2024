@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExpoSeries</title>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="shortcut icon" type="img/png" href="img/Stofun.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@heroicons/react@latest/dist/index.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .card-img {
+        transition: transform 0.5s ease, opacity 0.5s ease;
+      }
+      .card:hover .card-img {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+      .card-overlay {
+        transition: opacity 0.5s ease;
+        opacity: 0;
+      }
+      .card:hover .card-overlay {
+        opacity: 1;
+      }
+      .card:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigator bar Start -->
+    <nav class="navbar">
+      <a href="./Index.html" class="navbar-logo"><span>ExpoSeries</span></a>
+      <div class="navbar-nav">
+        <a href="./Index.html">Home</a>
+        <a href="./tujuanWebsite.html">Tujuan Pembuatan Website</a>
+        <a href="./MenuPilihan.html">Menghitung</a>
+        <a href="./Anggota.html">Anggota</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#$" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navigator bar End -->
+    <div class="container mx-auto p-8" style="margin-top: 100px">
+      <h1 class="text-3xl font-bold text-center mb-8">Anggota Tim</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div
+          class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 card"
+        >
+          <div class="relative">
+            <img
+              class="w-full h-96 object-cover object-center card-img"
+              src="./img/salsa.png"
+              alt="Foto Anggota"
+            />
+          </div>
+          <div class="p-6">
+            <h2 class="text-2xl font-bold mb-2">Riyanti Salsabila</h2>
+            <p class="text-gray-700 mb-4">237006156</p>
+            <p class="text-gray-700 mb-4">Jobdesk : Tampilan Menu Menghitung</p>
+            <div class="flex justify-center">
+              <a
+                href="https://www.instagram.com/salsablarynt?igsh=eWJ2YmxpbGludTFy"
+                class="text-gray-500 hover:text-gray-700 transition duration-300"
+              >
+                <i data-feather="instagram" class="w-6 h-6"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 card"
+        >
+          <div class="relative">
+            <img
+              class="w-full h-96 object-cover object-center card-img"
+              src="./img/raka.png"
+              alt="Foto Anggota"
+            />
+          </div>
+          <div class="p-6">
+            <h2 class="text-2xl font-bold mb-2">M Raka Kesumah</h2>
+            <p class="text-gray-700 mb-4">237006159</p>
+            <p class="text-gray-700 mb-4">Jobdesk: Color Palette Researcher</p>
+            <div class="flex justify-center">
+              <a
+                href="https://www.instagram.com/_xrkaaa?igsh=MXZlaWV5NGNicWl1cA=="
+                class="text-gray-500 hover:text-gray-700 transition duration-300"
+              >
+                <i data-feather="instagram" class="w-6 h-6"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 card"
+        >
+          <div class="relative">
+            <img
+              class="w-full h-96 object-cover object-center card-img"
+              src="./img/rizky.png"
+              alt="Foto Anggota"
+            />
+          </div>
+          <div class="p-6">
+            <h2 class="text-2xl font-bold mb-2">Rizky Afrianti</h2>
+            <p class="text-gray-700 mb-4">237006168</p>
+            <p class="text-gray-700 mb-4">Jobdesk: Tampilan Home</p>
+            <div class="flex justify-center">
+              <a
+                href="https://www.instagram.com/heymerizzz?igsh=MWg3eGxuNWdwdXBjbQ=="
+                class="text-gray-500 hover:text-gray-700 transition duration-300"
+              >
+                <i data-feather="instagram" class="w-6 h-6"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Spacer for centering the last row -->
+        <div class="md:col-span-1 lg:col-span-3"></div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 card"
+        >
+          <div class="relative">
+            <img
+              class="w-full h-96 object-cover object-center card-img"
+              src="./img/dimas.png"
+              alt="Foto Anggota"
+            />
+          </div>
+          <div class="p-6">
+            <h2 class="text-2xl font-bold mb-2">Dimas Garnida</h2>
+            <p class="text-gray-700 mb-4">237006170</p>
+            <p class="text-gray-700 mb-4">Jobdesk: Program Perhitungan</p>
+            <div class="flex justify-center">
+              <a
+                href="https://www.instagram.com/dsgarnida_d?igsh=OW15dXNjMWFzMTls"
+                class="text-gray-500 hover:text-gray-700 transition duration-300"
+              >
+                <i data-feather="instagram" class="w-6 h-6"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 card"
+        >
+          <div class="relative">
+            <img
+              class="w-full h-96 object-cover object-center card-img"
+              src="./img/silmi.png"
+              alt="Foto Anggota"
+            />
+          </div>
+          <div class="p-6">
+            <h2 class="text-2xl font-bold mb-2">Silmi Nindi Putri</h2>
+            <p class="text-gray-700 mb-4">237006178</p>
+            <p class="text-gray-700 mb-4">Jobdesk: Menu Perihal dan Anggota</p>
+            <div class="flex justify-center">
+              <a
+                href="https://www.instagram.com/silminindip_?igsh=MXN6Y29rcGlyYjlqcQ%3D%3D&utm_source=qr"
+                class="text-gray-500 hover:text-gray-700 transition duration-300"
+              >
+                <i data-feather="instagram" class="w-6 h-6"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Java -->
+    <script src="js/script.js"></script>
+
+    <!-- Icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

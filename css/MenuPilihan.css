@@ -1,0 +1,244 @@
+:root {
+  --primary: #006da4;
+  --bg: #27538c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-image: url("../img/header-bg.jpg");
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.bodyMenu {
+  padding: 150px;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: url("../img/2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(237, 237, 237);
+  border-bottom: 1px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #006da4;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #006da4;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #006da4;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.container {
+  margin-top: 1rem;
+  display: inline-block;
+  align-items: baseline;
+  padding: 1rem 1rem;
+  font-size: 1.6rem;
+  background-color: var(--bg);
+  box-shadow: none;
+  justify-content: center;
+  border-radius: 50px;
+  transition: all, 1s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 4px 4px 5px rgba(0, 65, 164);
+}
+.container h1 {
+  padding: 0.5rem 5rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.btn {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  color: #006da4;
+}
+
+button {
+  width: 70%;
+  height: 50%;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  margin: 10px 10px;
+  background-color: #fff;
+  font-size: 1.4rem;
+  color: #006da4;
+  padding: 10px 10px;
+  font-weight: bold;
+  box-shadow: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.huruf {
+  color: #006da4;
+}
+
+button:hover {
+  box-shadow: 4px 4px 5px rgba(0, 65, 165);
+  text-shadow: 4px 4px 5px rgba(0, 65, 165);
+  width: 75%;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* HP */
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #ffffff;
+    width: 25rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover:after {
+    transform: scaleX(0.2);
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-position: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content {
+    font-size: 1.6rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  html {
+    font-size: 55%;
+  }
+}
